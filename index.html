@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-compatible" content="ie=edge">
+<title>Kuwero | Leather Shoes </title>
+<link rel ="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<script>
+  $(function() {
+    var shop = new $.Shop("#site");
+  });
+
+  function addToCart(id, name, price, image) {
+var sizeSelect = document.getElementById(id + "Size");
+var size = sizeSelect.options[sizeSelect.selectedIndex].value;
+
+var quantitySelect = document.getElementById(id + "Quantity");
+var quantity = quantitySelect.options[quantitySelect.selectedIndex].value;
+
+var subtotal = price * quantity;
+
+var product = {
+  productId: id,
+  productName: name,
+  price: price,
+  quantity: quantity,
+  image: image
+};
+
+// Call the addToCart function from cart.js
+addToCart(product.productId, product.productName, product.price, product.image);
+
+alert('Product added to cart');
+}
+</script>
+<script src="cart.js"></script>
+</head>
+<body>
+  
+  <div class="header">
+  <div class="container">
+  <div class="navbar">
+    <div class="logo">
+      <a href="index.html"> <img src="IMAGES/logo.png" width="300px"></a>
+        </div>
+      <nav>
+      <ul id="MenuItems">
+        <li><a href="index.html"><h3>Home</h3></a></li>
+        <li><a href="Product.html"><h3>Products</h3></a></li>
+        <li><a href="aboutus.html"><h3>About Us</h3></a></li>
+        <li><a href="contact.html"><h3>Contact &#9990;</h3></a></li>
+        <li><a href="account.html"><h3>Account</h3></a></li>
+        </ul>
+      </nav>
+      <a href="cart.html"><img src="IMAGES/cart1.png" width="30px" height="30px"></a>
+      <img src="IMAGES/menu.jpg" class="menu-icon" onclick="menubar()">
+    </div>
+    <div class="row">
+        <div class="col-2">
+          <hr width="100%" size="3" align="center"color="brown">
+        <h1 align= "center">WELCOME TO SHOP </h1>
+            <hr width="100%" size="3" align="center"color="brown">
+  <i><b> "Step into Style, Step into Success!"</b></i>
+  <br><p><h4>the moment you walk through our digital doors, expect nothing but the best in quality, variety, and exceptional service. Get ready to elevate your style, one step at a time, with <i>Kuwero</i>. Happy shopping!"</h4></p>
+              <hr width="100%" size="3" align="center"color="brown">
+              <a href="Product.html" class="btn"> <b><h3>Shop Now &#10148;</h3></b></a>
+      </div>
+  <div class="col-2">
+    <img src="IMAGES/new_model.jpg" >
+      </div>
+    </div>
+    </div>
+            </div>
+          
+<!-----featured categories----->
+          <div class="categories">
+            <div class="small-container">
+            </div>
+            <div class="row">
+              <div class="col-3">
+                <img src="IMAGES/promotion-material.jpg" >
+                </div>
+                <div class="col-3">
+                    <img src="IMAGES/promotion-material2.jpg">
+                    </div>
+                  <div class="col-3">
+                    <img src="IMAGES/promotion-material3.jpg">
+                      </div>
+            </div>
+          </div>
+<!-----featured products----->
+        <!-----Men Products----->
+<div class="small-container">
+  <div class="row row-2">
+    <hr width="100%" size="3" align="center" color="brown">
+    <center><h1>Men Leather Shoes</h1></center>
+    <hr width="100%" size="3" align="center" color="brown">
+  </div>
+  <div class="row">
+    <div class="col-4">
+      <a href="product1.html"><img src="IMAGES/product.jpg"></a>
+      <h4>Prince Classic Modern Formal Lace Up Dress Shoes</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-o"></i>
+      </div>
+      <p>₱1,750.00</p>
+      <select id= "product1Size">
+        <option>Select Size</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+        <option>46</option>
+        <option>47</option>
+      </select>
+      <select id="product1Quantity">
+        <option>Select Quantity</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      <a href="#" class="btn" data-product-id="product1" onclick="addToCart
+      ('product1', 'Prince Classic Modern Formal Lace Up Dress Shoes', 1750, 
+      'IMAGES/product.jpg')">Add To Cart</a>
+      
+    </div>
+    <div class="col-4">
+      <a href="product2.html"><img src="IMAGES/product2.jpg"></a>
+      <h4>Beacon Boat Shoes</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <p>₱1,499.00</p>
+      <select id= "product2Size">
+        <option>Select Size</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+        <option>46</option>
+        <option>47</option>
+      </select>
+      <select id="product2Quantity">
+        <option>Select Quantity</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      <a href="#" class="btn" data-product-id="product2" onclick="addToCart
+      ('product2', 'Beacon Boat Shoes', 1499, 
+      'IMAGES/product2.jpg')">Add To Cart</a>
+      
+    </div>
+    <div class="col-4">
+      <a href="Product3.html"><img src="IMAGES/product3_.jpg"></a>
+      <h4>Men's Desert Boots</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+      </div>
+      <p>₱1,350.00</p>
+      <select id= "product3Size">
+        <option>Select Size</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+        <option>46</option>
+        <option>47</option>
+      </select>
+      <select id="product3Quantity">
+        <option>Select Quantity</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      <a href="#" class="btn" data-product-id="product3" onclick="addToCart
+      ('product3', 'Men Desert Boots', 1350, 
+      'IMAGES/product3_.jpg')">Add To Cart</a>
+      
+    </div>
+    <div class="col-4">
+      <a href="Product4.html"><img src="IMAGES/product4.jpg"></a>
+      <h4>Chukka Dress Boots for Men</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+        <i class="fa fa-star-o"></i>
+      </div>
+      <p>₱1,750.00</p>
+      <select id= "product4Size">
+        <option>Select Size</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+        <option>46</option>
+        <option>47</option>
+      </select>
+      <select id="product4Quantity">
+        <option>Select Quantity</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      <a href="#" class="btn" data-product-id="product4" onclick="addToCart
+      ('product2', 'Chukka Dress Boots for Men', 1750, 
+      'IMAGES/product4.jpg')">Add To Cart</a>
+      
+    </div>
+    <div class="col-4">
+      <a href="p1.html"><img src="IMAGES/newp1_.jpg"></a>
+      <h4>Men's Leather Lined Dress Loafers Shoes</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-o"></i>
+      </div>
+      <p>₱1,499.00</p>
+      <select id= "product5Size">
+        <option>Select Size</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+        <option>46</option>
+        <option>47</option>
+      </select>
+      <select id="product5Quantity">
+        <option>Select Quantity</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      <a href="#" class="btn" data-product-id="product5" onclick="addToCart
+      ('product5', 'Men Leather Lined Dress Loafers Shoes', 1499, 
+      'IMAGES/newp1_.jpg')">Add To Cart</a>
+      
+    </div>
+    <div class="col-4">
+      <a href="p7.html"><img src="IMAGES/newp7.jpg"></a>
+      <h4>Classic Brown Leather Shoes for Men</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <p>₱1,499.00</p>
+      <select id= "product6Size">
+        <option>Select Size</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+        <option>46</option>
+        <option>47</option>
+      </select>
+      <select id="product6Quantity">
+        <option>Select Quantity</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      <a href="#" class="btn" data-product-id="product6" onclick="addToCart
+      ('product6', 'Classic Brown Leather Shoes for Men', 1499, 
+      'IMAGES/newp7.jpg')">Add To Cart</a>
+      
+    </div>
+    <div class="col-4">
+      <a href="p8.html"><img src="IMAGES/newp8.jpg"></a>
+      <h4>Men's Casual Dress Shoes | Formal</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <p>₱1,499.00</p>
+      <select id= "product7Size">
+        <option>Select Size</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+        <option>46</option>
+        <option>47</option>
+      </select>
+      <select id="product7Quantity">
+        <option>Select Quantity</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      <a href="#" class="btn" data-product-id="product7" onclick="addToCart
+      ('product7', 'Men Casual Dress Shoes', 1499, 
+      'IMAGES/newp8.jpg')">Add To Cart</a>
+      
+    </div>
+    <div class="col-4">
+      <a href="p9.html"><img src="IMAGES/newp9.jpg"></a>
+      <h4>Men's Strap Loafer</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <p>₱1,599.00</p>
+      <select id= "product8Size">
+        <option>Select Size</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+        <option>46</option>
+        <option>47</option>
+      </select>
+      <select id="product8Quantity">
+        <option>Select Quantity</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      <a href="#" class="btn" data-product-id="product8" onclick="addToCart
+      ('product8', 'Men Strap Loafer', 1599, 
+      'IMAGES/newp9.jpg')">Add To Cart</a>
+      
+    </div>
+    <div class="col-4">
+      <a href="product_page.html"><img src="IMAGES/newp10.jpg"></a>
+      <h4>Men's Leather Business Casual Shoes</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <p>₱1,550.00</p>
+      <select id= "product9Size">
+        <option>Select Size</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+        <option>46</option>
+        <option>47</option>
+      </select>
+      <select id="product9Quantity">
+        <option>Select Quantity</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      <a href="#" class="btn" data-product-id="product9" onclick="addToCart
+      ('product9', 'Men Leather Business Casual Shoes', 1550, 
+      'IMAGES/newp10.jpg')">Add To Cart</a>
+      
+    </div>
+    <div class="col-4">
+      <a href="p11.html"><img src="IMAGES/newp11.jpg"></a>
+      <h4>Men's Cap Vert Slip-On</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <p>₱1,300.00</p>
+      <select id= "product10Size">
+        <option>Select Size</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+        <option>46</option>
+        <option>47</option>
+      </select>
+      <select id="product10Quantity">
+        <option>Select Quantity</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      <a href="#" class="btn" data-product-id="product10" onclick="addToCart
+      ('product10', 'Men Cap Vert Slip-On', 1300, 
+      'IMAGES/newp11.jpg')">Add To Cart</a>
+      
+    </div>
+  </div>
+</div>
+
+<!-----Women Products----->
+<div class="small-container">
+  <div class="row row-2">
+    <hr width="100%" size="3" align="center" color="brown">
+    <center><h1>Women Leather Shoes</h1></center>
+    <hr width="100%" size="3" align="center" color="brown">
+  </div>
+  <div class="row">
+    <div class="col-4">
+      <a href="p2.html"><img src="IMAGES/newp2.jpg"></a>
+      <h4>Women's Loafer</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <p>₱499.00</p>
+      <select id= "wproduct1Size">
+        <option>Select Size</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+        <option>46</option>
+        <option>47</option>
+      </select>
+      <select id="wproduct1Quantity">
+        <option>Select Quantity</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      <a href="#" class="btn" data-product-id="wproduct1" onclick="addToCart
+      ('wproduct1', 'Womens Loafer', 499, 
+      'IMAGES/newp2.jpg')">Add To Cart</a>
+      
+    </div>
+    <div class="col-4">
+      <a href="p4.html"><img src="IMAGES/newp4.jpg"></a>
+      <h4>Women's Slip-On Loafer</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+        <i class="fa fa-star-o"></i>
+      </div>
+      <p>₱999.00</p>
+      <select id= "wproduct2Size">
+        <option>Select Size</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+        <option>46</option>
+        <option>47</option>
+      </select>
+      <select id="wproduct2Quantity">
+        <option>Select Quantity</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      <a href="#" class="btn" data-product-id="wproduct2" onclick="addToCart
+      ('wproduct2', 'Womens Slip-On Loafer', 999, 
+      'IMAGES/newp4.jpg')">Add To Cart</a>
+      
+    </div>
+    <div class="col-4">
+      <a href="p5.html"><img src="IMAGES/newp5.jpg"></a>
+      <h4>Women's Slip-on Loafer Shoes</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <p>₱1,099.00</p>
+      <select id= "wproduct3Size">
+        <option>Select Size</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+        <option>46</option>
+        <option>47</option>
+      </select>
+      <select id="wproduct3Quantity">
+        <option>Select Quantity</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      <a href="#" class="btn" data-product-id="wproduct3" onclick="addToCart
+      ('wproduct3', 'Womens Slip-On Loafer Shoes', 1099, 
+      'IMAGES/newp5.jpg')">Add To Cart</a>
+      
+    </div>
+    <div class="col-4">
+      <a href="p6.html"><img src="IMAGES/newp6.jpg"></a>
+      <h4>Women's Clover Pump Shoes</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <p>₱899.00</p>
+      <select id= "wproduct4Size">
+        <option>Select Size</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+        <option>46</option>
+        <option>47</option>
+      </select>
+      <select id="wproduct4Quantity">
+        <option>Select Quantity</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      <a href="#" class="btn" data-product-id="wproduct4" onclick="addToCart
+      ('wproduct4', 'Womens Clover Pump Shoes', 899, 
+      'IMAGES/newp6.jpg')">Add To Cart</a>
+      
+    </div>
+    <div class="col-4">
+      <a href="p12.html"><img src="IMAGES/newp12.jpg"></a>
+      <h4>Women's Ashland Lily Loafer</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <p>₱1,099.00</p>
+      <select id= "wproduct5Size">
+        <option>Select Size</option>
+        <option>40</option>
+        <option>41</option>
+        <option>42</option>
+        <option>43</option>
+        <option>44</option>
+        <option>45</option>
+        <option>46</option>
+        <option>47</option>
+      </select>
+      <select id="wproduct5Quantity">
+        <option>Select Quantity</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      <a href="#" class="btn" data-product-id="wproduct5" onclick="addToCart
+      ('wproduct5', 'Womens Ashland Lily Loafer', 1099, 
+      'IMAGES/newp12.jpg')">Add To Cart</a>
+      
+    </div>
+  </div>
+</div>
+    <!-----offer-->       
+            <div class="offer">
+              <div class="small-container">
+                <div class="row">
+                  <div class="col-2">
+                    <img src="IMAGES/exclusiveshoes.jpg" class="offer-ing" width="700" height="500">
+                  </div>
+                  <div class="col-2">
+                    <hr width="100%" size="3" align="center"color="brown">
+                    <p><center>Exclusive Available on Kuwero</center></p>
+                    <h3>2022 fashion British style men's leather shoes round toe platform lace-up shoes</h3>
+                    <small>Step into comfort and confidence with our 2022 Collection of British-Inspired Men's Leather Shoes, Featuring Round Toe Design, Platform Soles, and Classic Lace-up Details. Bring Out Your Inner Sophistication. Boost the style.</small>
+                    <hr width="100%" size="3" align="center"color="brown">
+                    <a href="" class="btn">Buy Now &#10148;</a>
+                  </div>
+                </div>  
+              </div>
+            </div>  
+            
+  <!----------footer---------->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Coupons</li>
+            <li>Blog Post</li>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>
+          </ul>
+        </div>
+        <div class="footer-col-2">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>Tiktok</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="Copyright"><center>&copy; 2023 Kuwero Leather Shoes. All rights reserved.</center></p>
+    </div>
+  </div>
+  <script>
+    var MenuItems=document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight="0px";
+    function menubar(){
+      if(MenuItems.style.maxHeight=="0px"){
+        MenuItems.style.maxHeight="200px";
+      }
+      else{
+        MenuItems.style.maxHeight="0px";
+      }
+    }
+  </script>
+  </div>
+  <script src="cart.js"></script>
+  </body>
+</html>
