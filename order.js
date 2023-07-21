@@ -11,8 +11,6 @@ document.getElementById("orderForm").addEventListener("submit", function(event) 
   var cvv = encryptData(document.getElementById("cvv").value);
   var bankName = document.getElementById("bankName").value; // Assuming you have added the "id" attribute to the bank select element
 
-  // Perform any necessary validation or processing here
-  // You can validate the form inputs, send the data to a server, or integrate with a payment service provider
 
   // Validate card number (decrypted for display)
   if (decryptData(cardNumber).length !== 16) {
